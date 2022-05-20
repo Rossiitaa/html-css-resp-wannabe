@@ -129,7 +129,37 @@ img {
  ************************************************/
 
  @media all and (max-width: 768px) {
-    .container{
+    .container {
         width: 100%;
     }
  }
+
+ @media all and (max-width: 480px) { 
+    .container .col{
+        width: 100%;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    img {
+        margin: 5vh 0;
+    }
+
+
+/* why us section */
+    .why-us{
+        background-color: black;
+        margin: 0;
+        padding: 8vh 0;
+    }
+    .why-us .col-right {
+        margin-top: 5vh;
+    }
+
+/* steps section */
+    .steps{
+        margin-bottom: 0;
+    }
+}
